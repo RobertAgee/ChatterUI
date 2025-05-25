@@ -5,9 +5,10 @@ node_modules*
 
 # dev items
 public/
+.idea/
 
 # builds
-android
+#android
 eas.json
 *.apk
 .gradle

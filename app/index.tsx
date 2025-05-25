@@ -12,6 +12,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import migrations from '../db/migrations/migrations'
 
+import TTSExample from './TTSExample'; // adjust if path differs
+
 const Home = () => {
     const { color } = Theme.useTheme()
     const styles = useStyles()
@@ -63,7 +65,9 @@ const Home = () => {
                 </TouchableOpacity>
             </View>
         )
-    if (!firstRender && success) return <CharacterMenu />
+//     if (!firstRender && success) return <CharacterMenu />
+    if (!firstRender && success) return <TTSExample />
+
     return <HeaderTitle />
 }
 
